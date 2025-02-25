@@ -4,6 +4,14 @@ function toggleMenu() {
     navLinks.classList.toggle('active');
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('.back-video');
+    video.play().catch(function(error) {
+        console.log("Autoplay failed: ", error);
+        // Optional: Add a manual play button or retry logic here
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     // Strain data
     const strains = [
