@@ -111,6 +111,23 @@ nav ul li a:hover::after {
     z-index: -1;
 }
 
+.hamburger {
+    background: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: #fff;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+}
+
 /** PRODUCTS SECTION **/
 .products-section {
     width: 100%;
