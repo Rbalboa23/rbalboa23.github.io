@@ -245,6 +245,12 @@ footer {
     }
 }
 
+button {
+    -webkit-appearance: none; /* Removes iOS button styling */
+    -moz-appearance: none; /* Removes Firefox button styling */
+    appearance: none; /* Standard reset */
+}
+
 @media (max-width: 480px) {
     .content h1 {
         font-size: 3.5rem;
