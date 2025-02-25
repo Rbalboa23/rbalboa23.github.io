@@ -117,11 +117,12 @@ nav {
 /* Video Background */
 .back-video {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+    top: 0; /* Changed from bottom: 0 to ensure it starts at the top */
+    left: 0; /* Changed from right: 0 to align fully */
     width: 100%;
-    height: auto;
+    height: 100%; /* Match the parent (.hero) height */
+    object-fit: cover; /* Crops the video to fill the space without distortion */
+    z-index: -1;
 }
 
 /* Content */
