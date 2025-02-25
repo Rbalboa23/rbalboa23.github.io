@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higharchy</title>
+    <link rel="stylesheet" href="css/stylesreports.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+    <!-- Banner -->
+<body>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/rain.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <nav>
+            <a href="index.html" class="nav-logo">Higharchy</a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="reports.html" class="active">LAB REPORTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Lab Reports</h1>
+        </div>
+    </div>
+
+
+<!-- Filter Buttons -->
+<section class="filters">
+    <h2>Filter by Category</h2>
+    <div class="filter-buttons">
+        <button onclick="filterStrains('all')">All</button>
+        <button onclick="filterStrains('premium')">Premium</button>
+        <button onclick="filterStrains('candy')">Candy</button>
+        <button onclick="filterStrains('exotic')">Exotic</button>
+        <button onclick="filterStrains('basic')">Basic</button>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search for a strain..." onkeyup="searchStrains()">
+    </div>
+
+</section>
+
+<!-- Strain List -->
+<section class="strain-list">
+    <h2>Cannabis Flower Lab Reports</h2>
+    <div id="strain-container">
+        <!-- Strains will be dynamically loaded here -->
+    </div>
+</section>
+</body>
+</html>
